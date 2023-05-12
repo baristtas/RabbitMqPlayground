@@ -8,27 +8,37 @@ namespace RabbitMqConsumer
     {
         static void Main(string[] args)
         {
+            string uri = "";
+            try
+            {
+                StreamReader sr = new StreamReader("C:\\Users\\baris.tas\\Desktop\\rbmq\\amqpinstanceuri.txt");
+                uri = sr.ReadToEnd();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+            }
             var factory = new ConnectionFactory();
             factory.Uri = new Uri("amqps://zgvcyqrk:FAAZd2v-1z-jl4vKNUoizuh_XFrxKHcR@hawk.rmq.cloudamqp.com/zgvcyqrk");
-
+            
             using var connection = factory.CreateConnection();
-
+            
             var channel = connection.CreateModel();
-
+            
             channel.QueueDeclare("hello-queue", true, false, false, null);
-
+            
             var consumer = new EventingBasicConsumer(channel);
-
+            
             channel.BasicConsume("hello-queue", true, consumer);
-
+            
             consumer.Received += MessageReceived;
-
+            
             //Lambda implementation of receive slot
             //consumer.Received += (object sender, BasicDeliverEventArgs e) =>
             //{
             //    
             //};
-
+            
             Console.ReadLine();
         }
 
