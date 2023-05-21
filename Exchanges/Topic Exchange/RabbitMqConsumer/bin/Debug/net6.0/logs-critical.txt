@@ -1,0 +1,115 @@
+log-type: Critical-1
+log-type: Critical-9
+log-type: Critical-11
+log-type: Critical-14
+log-type: Critical-15
+log-type: Critical-23
+log-type: Critical-24
+log-type: Critical-25
+log-type: Critical-27
+log-type: Critical-34
+log-type: Critical-38
+log-type: Critical-43
+log-type: Critical-47
+log-type: Critical-4
+log-type: Critical-5
+log-type: Critical-9
+log-type: Critical-10
+log-type: Critical-11
+log-type: Critical-15
+log-type: Critical-16
+log-type: Critical-20
+log-type: Critical-26
+log-type: Critical-27
+log-type: Critical-32
+log-type: Critical-37
+log-type: Critical-43
+log-type: Critical-44
+log-type: Critical-49
+log-type: Critical-7
+log-type: Critical-12
+log-type: Critical-15
+log-type: Critical-16
+log-type: Critical-18
+log-type: Critical-19
+log-type: Critical-20
+log-type: Critical-21
+log-type: Critical-24
+log-type: Critical-27
+log-type: Critical-28
+log-type: Critical-42
+log-type: Critical-3
+log-type: Critical-5
+log-type: Critical-9
+log-type: Critical-10
+log-type: Critical-11
+log-type: Critical-12
+log-type: Critical-14
+log-type: Critical-15
+log-type: Critical-17
+log-type: Critical-23
+log-type: Critical-25
+log-type: Critical-28
+log-type: Critical-31
+log-type: Critical-46
+log-type: Critical-49
+log-type: Critical-50
+log-type: Critical-2
+log-type: Critical-3
+log-type: Critical-11
+log-type: Critical-13
+log-type: Critical-23
+log-type: Critical-29
+log-type: Critical-47
+log-type: Info.Error.Error - 8
+log-type: Critical.Error.Warning - 11
+log-type: Error.Error.Info - 14
+log-type: Warning.Error.Critical - 15
+log-type: Warning.Error.Critical - 17
+log-type: Error.Error.Critical - 19
+log-type: Critical.Error.Warning - 24
+log-type: Warning.Error.Info - 37
+log-type: Warning.Error.Critical - 41
+log-type: Critical.Error.Info - 43
+log-type: Critical.Error.Warning - 46
+log-type: Info.Info.Warning - 2
+log-type: Warning.Info.Warning - 4
+log-type: Info.Critical.Warning - 9
+log-type: Warning.Critical.Warning - 10
+log-type: Error.Critical.Warning - 12
+log-type: Info.Info.Warning - 18
+log-type: Warning.Info.Warning - 21
+log-type: Critical.Info.Warning - 22
+log-type: Warning.Critical.Warning - 24
+log-type: Critical.Info.Warning - 26
+log-type: Error.Info.Warning - 30
+log-type: Warning.Error.Warning - 33
+log-type: Warning.Info.Warning - 36
+log-type: Warning.Warning.Warning - 37
+log-type: Critical.Error.Warning - 48
+log-type: Error.Info.Warning - 49
+log-type: Warning.Error.Critical - 2
+log-type: Warning.Error.Critical - 9
+log-type: Warning.Error.Warning - 11
+log-type: Warning.Info.Warning - 18
+log-type: Warning.Error.Critical - 19
+log-type: Warning.Error.Critical - 20
+log-type: Warning.Info.Warning - 29
+log-type: Warning.Info.Critical - 31
+log-type: Warning.Error.Info - 32
+log-type: Warning.Error.Info - 33
+log-type: Warning.Warning.Error - 36
+log-type: Warning.Warning.Critical - 37
+log-type: Warning.Info.Error - 40
+log-type: Warning.Warning.Error - 43
+log-type: Warning.Error.Critical - 5
+log-type: Warning.Critical.Critical - 10
+log-type: Warning.Critical.Critical - 21
+log-type: Warning.Error.Critical - 38
+log-type: Warning.Error.Critical - 3
+log-type: Info.Critical.Critical - 6
+log-type: Info.Critical.Critical - 21
+log-type: Info.Warning.Critical - 27
+log-type: Warning.Info.Critical - 29
+log-type: Warning.Critical.Critical - 33
+log-type: Warning.Error.Critical - 36
