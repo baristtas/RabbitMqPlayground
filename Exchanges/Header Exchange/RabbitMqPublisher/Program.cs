@@ -31,6 +31,7 @@ namespace RabbitMqPublisher
 
             using var connection = factory.CreateConnection();
 
+            
             var channel = connection.CreateModel();
             channel.ExchangeDeclare("header-exchange", durable: true, type: ExchangeType.Headers);
 
@@ -40,10 +41,11 @@ namespace RabbitMqPublisher
             headers.Add("shape", "a4");
 
             var properties = channel.CreateBasicProperties();
-
             properties.Headers = headers;
 
-            channel.BasicPublish("header-exchange", "",string.Empty,null);
+            channel.BasicPublish("header-exchange", string.Empty, properties, Encoding.UTF8.GetBytes("Message"));
+
+            Console.WriteLine("Message sent.");
 
             Console.ReadLine();
         }

@@ -25,16 +25,19 @@ namespace RabbitMqConsumer
             factory.Uri = new Uri(uri);
 
             using var connection = factory.CreateConnection();
-
             var channel = connection.CreateModel();
 
-            var queueName = "direct-exchangeCritical";
+            var queueName = channel.QueueDeclare().QueueName;
 
             Console.WriteLine("listening " + queueName);
             var consumer = new EventingBasicConsumer(channel);
 
+            Dictionary<string,object> headers = new Dictionary<string, object>();
+            headers.Add("format", "pdf");
+            headers.Add("shape", "a4");
+            headers.Add("x-match", "all");
 
-            channel.QueueBind(queueName, "logs-direct", queueName, null);
+            channel.QueueBind(queueName, "header-exchange", string.Empty, headers);
 
             channel.BasicConsume(queueName, false, consumer);
 
@@ -42,10 +45,9 @@ namespace RabbitMqConsumer
             consumer.Received += (object? sender, BasicDeliverEventArgs e) =>
             {
                 var msg = Encoding.UTF8.GetString(e.Body.ToArray());
-
+                Console.WriteLine(e.Exchange.ToString());
                 Thread.Sleep(1000);
                 Console.WriteLine("message received: " + msg);
-                File.AppendAllText("logs-critical.txt", msg + "\n");
                 channel.BasicAck(e.DeliveryTag,true);
             };
 
