@@ -1,0 +1,12 @@
+C:\Users\baris.tas\Desktop\rbmq\Apps\Playground\Object Serialize\Shared\bin\Debug\net6.0\Shared.deps.json
+C:\Users\baris.tas\Desktop\rbmq\Apps\Playground\Object Serialize\Shared\bin\Debug\net6.0\Shared.dll
+C:\Users\baris.tas\Desktop\rbmq\Apps\Playground\Object Serialize\Shared\bin\Debug\net6.0\Shared.pdb
+C:\Users\baris.tas\Desktop\rbmq\Apps\Playground\Object Serialize\Shared\obj\Debug\net6.0\Shared.csproj.AssemblyReference.cache
+C:\Users\baris.tas\Desktop\rbmq\Apps\Playground\Object Serialize\Shared\obj\Debug\net6.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\baris.tas\Desktop\rbmq\Apps\Playground\Object Serialize\Shared\obj\Debug\net6.0\Shared.AssemblyInfoInputs.cache
+C:\Users\baris.tas\Desktop\rbmq\Apps\Playground\Object Serialize\Shared\obj\Debug\net6.0\Shared.AssemblyInfo.cs
+C:\Users\baris.tas\Desktop\rbmq\Apps\Playground\Object Serialize\Shared\obj\Debug\net6.0\Shared.csproj.CoreCompileInputs.cache
+C:\Users\baris.tas\Desktop\rbmq\Apps\Playground\Object Serialize\Shared\obj\Debug\net6.0\Shared.dll
+C:\Users\baris.tas\Desktop\rbmq\Apps\Playground\Object Serialize\Shared\obj\Debug\net6.0\refint\Shared.dll
+C:\Users\baris.tas\Desktop\rbmq\Apps\Playground\Object Serialize\Shared\obj\Debug\net6.0\Shared.pdb
+C:\Users\baris.tas\Desktop\rbmq\Apps\Playground\Object Serialize\Shared\obj\Debug\net6.0\ref\Shared.dll

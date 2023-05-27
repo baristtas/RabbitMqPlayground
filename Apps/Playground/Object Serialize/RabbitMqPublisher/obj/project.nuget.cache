@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "GCfJrep4NIAKAg/Z/z1HvB3GBYfyqfxt2Nq2J6I7TxmfZFwjrUFmQd0mSL+pQmCBORupp0cGKCbS8bgKi2j9YQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\Playground\\Object Serialize\\RabbitMqPublisher\\RabbitMqPublisher.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\baris.tas\\.nuget\\packages\\rabbitmq.client\\6.5.0\\rabbitmq.client.6.5.0.nupkg.sha512",
+    "C:\\Users\\baris.tas\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\baris.tas\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
