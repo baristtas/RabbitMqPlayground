@@ -14,7 +14,7 @@ namespace ImageWatermarkRabbitMQ.Models
         [Range(1,100)]
         public int stock { get; set; }
         [StringLength(100)]
-        public string pictureUrl { get; set; }
+        public string ImageName { get; set; }
 
     }
 }

@@ -6,24 +6,27 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ImageWatermarkRabbitMQ.Models;
+using ImageWatermarkRabbitMQ.Services;
 
 namespace ImageWatermarkRabbitMQ.Controllers
 {
     public class ProductsController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly RabbitMQPublisher m_rabbitMQPublisher;
 
-        public ProductsController(AppDbContext context)
+        public ProductsController(AppDbContext context, RabbitMQPublisher rabbitMQPublisher)
         {
             _context = context;
+            m_rabbitMQPublisher= rabbitMQPublisher;
         }
 
         // GET: Products
         public async Task<IActionResult> Index()
         {
-              return _context.Products != null ? 
-                          View(await _context.Products.ToListAsync()) :
-                          Problem("Entity set 'AppDbContext.Products'  is null.");
+            return _context.Products != null ?
+                        View(await _context.Products.ToListAsync()) :
+                        Problem("Entity set 'AppDbContext.Products'  is null.");
         }
 
         // GET: Products/Details/5
@@ -55,14 +58,37 @@ namespace ImageWatermarkRabbitMQ.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,name,price,stock,pictureUrl")] Product product)
+        public async Task<IActionResult> Create([Bind("id,name,price,stock,ImageName")] Product product, IFormFile ImageFile) //iformfile name'i kullanacak
         {
             if (ModelState.IsValid)
             {
-                _context.Add(product);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return View(product);
             }
+
+            if(ImageFile is { Length: > 0 })
+            {
+                var randomImageName = Guid.NewGuid() + Path.GetExtension(ImageFile.FileName); //dosya uzantısı döner
+
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images", randomImageName);
+
+                await using FileStream stream = new(path, FileMode.Create);
+
+                await ImageFile.CopyToAsync(stream);
+
+                m_rabbitMQPublisher.Publish(new ProductImageCreatedEvent()
+                {
+                    imageName = randomImageName
+                });
+
+                product.ImageName = randomImageName;
+            }
+
+            
+
+            _context.Add(product);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+
             return View(product);
         }
 
@@ -149,14 +175,14 @@ namespace ImageWatermarkRabbitMQ.Controllers
             {
                 _context.Products.Remove(product);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ProductExists(int id)
         {
-          return (_context.Products?.Any(e => e.id == id)).GetValueOrDefault();
+            return (_context.Products?.Any(e => e.id == id)).GetValueOrDefault();
         }
     }
 }
