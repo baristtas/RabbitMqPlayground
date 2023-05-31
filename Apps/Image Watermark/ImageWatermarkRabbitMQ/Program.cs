@@ -1,5 +1,7 @@
 using ImageWatermarkRabbitMQ.Models;
+using ImageWatermarkRabbitMQ.Services;
 using Microsoft.EntityFrameworkCore;
+using RabbitMQ.Client;
 
 namespace ImageWatermarkRabbitMQ
 {
@@ -9,7 +11,25 @@ namespace ImageWatermarkRabbitMQ
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            //RabbitMQ cloud uri
+            string uri = "";
+            try
+            {
+                StreamReader sr = new StreamReader("C:\\Users\\baris.tas\\Desktop\\rbmq\\amqpinstanceuri.txt");
+                uri = sr.ReadToEnd();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+            }
+
             // Add services to the container.
+            builder.Services.AddSingleton(sp => new ConnectionFactory() {
+                Uri = new Uri(uri) 
+            });
+            builder.Services.AddSingleton<RabbitMQClientService>();
+
+
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<AppDbContext>(options =>
             {
