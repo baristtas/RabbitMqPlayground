@@ -23,7 +23,6 @@ namespace ImageWatermarkRabbitMQ.Services
         {
             m_connectionFactory = connectionFactory;
             m_logger= logger;
-            connect();
         }
 
         public IModel connect()

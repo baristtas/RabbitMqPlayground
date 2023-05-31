@@ -28,7 +28,7 @@ namespace ImageWatermarkRabbitMQ
                 Uri = new Uri(uri) 
             });
             builder.Services.AddSingleton<RabbitMQClientService>();
-
+            builder.Services.AddSingleton<RabbitMQPublisher>();
 
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<AppDbContext>(options =>
