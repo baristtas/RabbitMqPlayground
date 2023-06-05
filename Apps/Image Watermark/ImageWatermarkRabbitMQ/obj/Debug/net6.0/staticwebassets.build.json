@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lGnpFDPR8xNnev77ZW8/jf/nBua1CiwRKinrYo4THOs=",
+  "Hash": "/ZQV1FJRai0FueYYnnj5g7Kw/bm/j7NE4KgpfT0bgWQ=",
   "Source": "ImageWatermarkRabbitMQ",
   "BasePath": "_content/ImageWatermarkRabbitMQ",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\Image Watermark\\ImageWatermarkRabbitMQ\\wwwroot\\Images\\20d86ac5-e037-464c-af4b-9d131cbcd2b8.jpg",
+      "SourceId": "ImageWatermarkRabbitMQ",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\Image Watermark\\ImageWatermarkRabbitMQ\\wwwroot\\",
+      "BasePath": "_content/ImageWatermarkRabbitMQ",
+      "RelativePath": "Images/20d86ac5-e037-464c-af4b-9d131cbcd2b8.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\20d86ac5-e037-464c-af4b-9d131cbcd2b8.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\Image Watermark\\ImageWatermarkRabbitMQ\\wwwroot\\Images\\29940143-580e-4cd2-90fa-b5f76473e6aa.jpg",
+      "SourceId": "ImageWatermarkRabbitMQ",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\Image Watermark\\ImageWatermarkRabbitMQ\\wwwroot\\",
+      "BasePath": "_content/ImageWatermarkRabbitMQ",
+      "RelativePath": "Images/29940143-580e-4cd2-90fa-b5f76473e6aa.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\29940143-580e-4cd2-90fa-b5f76473e6aa.jpg"
     },
     {
       "Identity": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\Image Watermark\\ImageWatermarkRabbitMQ\\wwwroot\\js\\site.js",

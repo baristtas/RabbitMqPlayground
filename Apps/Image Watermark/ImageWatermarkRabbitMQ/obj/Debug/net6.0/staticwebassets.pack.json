@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\ImageWatermarkRabbitMQ.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\Image Watermark\\ImageWatermarkRabbitMQ\\wwwroot\\Images\\20d86ac5-e037-464c-af4b-9d131cbcd2b8.jpg",
+      "PackagePath": "staticwebassets\\Images\\20d86ac5-e037-464c-af4b-9d131cbcd2b8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\Image Watermark\\ImageWatermarkRabbitMQ\\wwwroot\\Images\\29940143-580e-4cd2-90fa-b5f76473e6aa.jpg",
+      "PackagePath": "staticwebassets\\Images\\29940143-580e-4cd2-90fa-b5f76473e6aa.jpg"
+    },
+    {
       "Id": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\Image Watermark\\ImageWatermarkRabbitMQ\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
