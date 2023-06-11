@@ -1,7 +1,6 @@
 ﻿using ImageWatermarkRabbitMQ.Services;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
-using System.Text;
 using System.Drawing;
 using System.Text.Json;
 
@@ -12,6 +11,12 @@ namespace ImageWatermarkRabbitMQ.BackgroundServices
         private readonly RabbitMQClientService m_rabbitMqClientService;
         private readonly ILogger<ImageWatermarkProcessBackgroundService> m_logger;
         private RabbitMQ.Client.IModel m_channel;
+
+        public ImageWatermarkProcessBackgroundService(RabbitMQClientService rabbitMqClientService, ILogger<ImageWatermarkProcessBackgroundService> logger)
+        {
+            m_rabbitMqClientService = rabbitMqClientService;
+            m_logger = logger;
+        }
 
         public override Task StartAsync(CancellationToken cancellationToken)
         {
@@ -34,25 +39,39 @@ namespace ImageWatermarkRabbitMQ.BackgroundServices
 
         private Task Consumer_Received(object sender, BasicDeliverEventArgs @event)
         {
-            var productImageCreatedEvent = JsonSerializer.Deserialize<ProductImageCreatedEvent>(Encoding.UTF8.GetString(@event.Body.ToArray()));
-            var path = Path.Combine(Directory.GetCurrentDirectory() + "wwwroot/Images" + productImageCreatedEvent.imageName);
+            try
+            {
 
-            using var img = Image.FromFile(path);
 
-            using var graphic = Graphics.FromImage(img);
+                var productImageCreatedEvent = JsonSerializer.Deserialize<ProductImageCreatedEvent>(System.Text.Encoding.UTF8.GetString(@event.Body.ToArray()));
+                var path = Path.Combine(Directory.GetCurrentDirectory() + "/wwwroot/Images/" + productImageCreatedEvent.imageName);
 
-            var font = new Font(FontFamily.GenericSansSerif,10);
+                using Image img = Image.FromFile(path);
 
-            var textSize = graphic.MeasureString("testbaristest",font);
+                using var graphic = Graphics.FromImage(img);
 
-            var color = Color.FromArgb(255,255,255,255);
-            var brush = new SolidBrush(color);
+                var font = new Font(FontFamily.GenericSansSerif, 35);
 
-            var position = new Point(img.Width-((int)textSize.Width+30),(int)textSize.Height-30);
+                var textSize = graphic.MeasureString("testbaristest", font);
 
-            graphic.DrawString("testbaristest",font,brush,position);
+                var color = Color.FromArgb(128, 0, 0, 0);
+                var brush = new SolidBrush(color);
 
-            graphic.Save(); 
+                var position = new Point((img.Width/2) - ((int)textSize.Width/2),(img.Height/2) - ((int)textSize.Height/2));
+
+                graphic.DrawString("testbaristest", font, brush, position);
+
+
+                img.Save("wwwroot/Images/Watermarks/" + productImageCreatedEvent.imageName);
+
+                img.Dispose();
+                graphic.Dispose();
+                m_channel.BasicAck(@event.DeliveryTag, false);
+            }
+            catch(Exception ex)
+            {
+                
+            }
 
             return Task.CompletedTask;
         }

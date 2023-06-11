@@ -2,6 +2,7 @@ using ImageWatermarkRabbitMQ.Models;
 using ImageWatermarkRabbitMQ.Services;
 using Microsoft.EntityFrameworkCore;
 using RabbitMQ.Client;
+using ImageWatermarkRabbitMQ.BackgroundServices;
 
 namespace ImageWatermarkRabbitMQ
 {
@@ -25,12 +26,13 @@ namespace ImageWatermarkRabbitMQ
 
             // Add services to the container.
             builder.Services.AddSingleton(sp => new ConnectionFactory() {
-                Uri = new Uri(uri) 
+                Uri = new Uri(uri), DispatchConsumersAsync= true
             });
             builder.Services.AddSingleton<RabbitMQClientService>();
             builder.Services.AddSingleton<RabbitMQPublisher>();
 
             builder.Services.AddControllersWithViews();
+            builder.Services.AddHostedService<ImageWatermarkProcessBackgroundService>();
             builder.Services.AddDbContext<AppDbContext>(options =>
             {
                 options.UseInMemoryDatabase(databaseName: "productDb");

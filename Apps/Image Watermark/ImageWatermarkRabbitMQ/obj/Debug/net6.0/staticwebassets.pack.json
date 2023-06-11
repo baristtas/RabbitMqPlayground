@@ -5,12 +5,28 @@
       "PackagePath": "staticwebassets\\ImageWatermarkRabbitMQ.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\Image Watermark\\ImageWatermarkRabbitMQ\\wwwroot\\Images\\20d86ac5-e037-464c-af4b-9d131cbcd2b8.jpg",
-      "PackagePath": "staticwebassets\\Images\\20d86ac5-e037-464c-af4b-9d131cbcd2b8.jpg"
+      "Id": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\Image Watermark\\ImageWatermarkRabbitMQ\\wwwroot\\Images\\Watermarks\\cea20d96-1558-4750-a3da-d3f02ed711cb.jpg",
+      "PackagePath": "staticwebassets\\Images\\Watermarks\\cea20d96-1558-4750-a3da-d3f02ed711cb.jpg"
     },
     {
-      "Id": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\Image Watermark\\ImageWatermarkRabbitMQ\\wwwroot\\Images\\29940143-580e-4cd2-90fa-b5f76473e6aa.jpg",
-      "PackagePath": "staticwebassets\\Images\\29940143-580e-4cd2-90fa-b5f76473e6aa.jpg"
+      "Id": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\Image Watermark\\ImageWatermarkRabbitMQ\\wwwroot\\Images\\Watermarks\\f2920f11-ce67-4d50-9139-be0bfd2c8374.jpg",
+      "PackagePath": "staticwebassets\\Images\\Watermarks\\f2920f11-ce67-4d50-9139-be0bfd2c8374.jpg"
+    },
+    {
+      "Id": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\Image Watermark\\ImageWatermarkRabbitMQ\\wwwroot\\Images\\Watermarks\\ff4c859a-08d5-4d06-8b3d-432a6a5d3d5e.jpg",
+      "PackagePath": "staticwebassets\\Images\\Watermarks\\ff4c859a-08d5-4d06-8b3d-432a6a5d3d5e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\Image Watermark\\ImageWatermarkRabbitMQ\\wwwroot\\Images\\cea20d96-1558-4750-a3da-d3f02ed711cb.jpg",
+      "PackagePath": "staticwebassets\\Images\\cea20d96-1558-4750-a3da-d3f02ed711cb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\Image Watermark\\ImageWatermarkRabbitMQ\\wwwroot\\Images\\f2920f11-ce67-4d50-9139-be0bfd2c8374.jpg",
+      "PackagePath": "staticwebassets\\Images\\f2920f11-ce67-4d50-9139-be0bfd2c8374.jpg"
+    },
+    {
+      "Id": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\Image Watermark\\ImageWatermarkRabbitMQ\\wwwroot\\Images\\ff4c859a-08d5-4d06-8b3d-432a6a5d3d5e.jpg",
+      "PackagePath": "staticwebassets\\Images\\ff4c859a-08d5-4d06-8b3d-432a6a5d3d5e.jpg"
     },
     {
       "Id": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\Image Watermark\\ImageWatermarkRabbitMQ\\wwwroot\\css\\site.css",
