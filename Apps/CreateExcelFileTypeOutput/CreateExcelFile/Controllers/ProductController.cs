@@ -1,4 +1,5 @@
 ﻿using CreateExcelFile.Models;
+using CreateExcelFile.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -11,11 +12,13 @@ namespace CreateExcelFile.Controllers
     {
         private readonly AppDbContext _context;
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly RabbitMQPublisher _rabbitMQPublisher;
 
-        public ProductController(AppDbContext context, UserManager<IdentityUser> userManager)
+        public ProductController(AppDbContext context, UserManager<IdentityUser> userManager, RabbitMQPublisher rabbitMQPublisher)
         {
             _context = context;
             _userManager = userManager;
+            _rabbitMQPublisher= rabbitMQPublisher;
         }
 
         public IActionResult Index()
@@ -38,7 +41,11 @@ namespace CreateExcelFile.Controllers
 
             await _context.SaveChangesAsync();
             //RabbitMQ'ya mesaj gönder.
-            TempData["StartCreatingExcel"] = true;
+            _rabbitMQPublisher.Publish(new CreateExcelMessage()
+            {
+                FileId = userFile.Id,
+                UserId = user.Id
+            });
 
             return RedirectToAction(nameof(Files));
         }

@@ -1,4 +1,5 @@
 using CreateExcelFile.Models;
+using CreateExcelFile.Services;
 using ImageWatermarkRabbitMQ.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -12,17 +13,6 @@ namespace CreateExcelFile
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            string uri = "";
-            try
-            {
-                StreamReader sr = new StreamReader("C:\\Users\\baris.tas\\Desktop\\rbmq\\amqpinstanceuri.txt");
-                uri = sr.ReadToEnd();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message.ToString());
-            }
-
             // Add services to the container.
             builder.Services.AddDbContext<AppDbContext>(options =>
             {
@@ -30,7 +20,9 @@ namespace CreateExcelFile
 
             });
             builder.Services.AddControllersWithViews();
-            
+
+            StreamReader sr = new StreamReader("C:\\Users\\baris.tas\\Desktop\\rbmq\\amqpinstanceuri.txt");
+            var uri = sr.ReadToEnd();
             builder.Services.AddSingleton(sp => new ConnectionFactory()
             {
                 Uri = new Uri(uri),
@@ -38,7 +30,8 @@ namespace CreateExcelFile
             });
 
             builder.Services.AddSingleton<RabbitMQClientService>();
-            
+            builder.Services.AddSingleton<RabbitMQPublisher>();
+
             builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
             {
                 options.User.RequireUniqueEmail = true;
@@ -55,14 +48,14 @@ namespace CreateExcelFile
 
                 appDbContext.Database.Migrate();
 
-                if(!appDbContext.Users.Any()) 
+                if (!appDbContext.Users.Any())
                 {
                     userManager.CreateAsync(new IdentityUser()
                     {
                         UserName = "test1"
                     ,
                         Email = "test1@gmail.com"
-                    }, password:"Password12*").Wait();
+                    }, password: "Password12*").Wait();
 
                     userManager.CreateAsync(new IdentityUser()
                     {
@@ -95,7 +88,7 @@ namespace CreateExcelFile
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
-            
+
 
             app.Run();
         }

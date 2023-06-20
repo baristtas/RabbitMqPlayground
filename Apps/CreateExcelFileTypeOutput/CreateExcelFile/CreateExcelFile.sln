@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateExcelFile", "CreateExcelFile.csproj", "{FFBF7333-CB25-436D-86E9-D33562313D6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreateExcelFile", "CreateExcelFile.csproj", "{FFBF7333-CB25-436D-86E9-D33562313D6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelFileCreateWorkerService", "..\WorkerService\ExcelFileCreateWorkerService.csproj", "{7842DE6B-9CA6-4A02-9B28-289FDE2031CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibs", "..\SharedLibs\SharedLibs.csproj", "{9558D315-ECAB-49EB-BA3E-5822D954024F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{FFBF7333-CB25-436D-86E9-D33562313D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFBF7333-CB25-436D-86E9-D33562313D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFBF7333-CB25-436D-86E9-D33562313D6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7842DE6B-9CA6-4A02-9B28-289FDE2031CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7842DE6B-9CA6-4A02-9B28-289FDE2031CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7842DE6B-9CA6-4A02-9B28-289FDE2031CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7842DE6B-9CA6-4A02-9B28-289FDE2031CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9558D315-ECAB-49EB-BA3E-5822D954024F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9558D315-ECAB-49EB-BA3E-5822D954024F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9558D315-ECAB-49EB-BA3E-5822D954024F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9558D315-ECAB-49EB-BA3E-5822D954024F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

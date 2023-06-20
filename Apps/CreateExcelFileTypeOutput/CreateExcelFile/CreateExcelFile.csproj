@@ -19,7 +19,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Shared\" />
     <Folder Include="wwwroot\files\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SharedLibs\SharedLibs.csproj" />
+    <ProjectReference Include="..\WorkerService\ExcelFileCreateWorkerService.csproj" />
   </ItemGroup>
 
 </Project>

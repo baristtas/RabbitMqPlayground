@@ -12,7 +12,7 @@ namespace ImageWatermarkRabbitMQ.Services
         private IModel m_channel;
 
         public static string exchangeName = "ExcelDirectExchange";
-        public static string routingWatermark = "excel-route-file";
+        public static string routingExcel = "excel-route-file";
         public static string queueName = "queue-excel-file";
 
         private readonly ILogger<RabbitMQClientService> m_logger;
@@ -37,7 +37,7 @@ namespace ImageWatermarkRabbitMQ.Services
             m_channel.ExchangeDeclare(exchangeName, type: "direct", true, false);
             m_channel.QueueDeclare(queueName, true, false, false);
 
-            m_channel.QueueBind(queueName, exchangeName, routingWatermark);
+            m_channel.QueueBind(queueName, exchangeName, routingExcel);
 
             m_logger.LogInformation("Connection created.");
 

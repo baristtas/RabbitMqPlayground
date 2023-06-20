@@ -1,0 +1,12 @@
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\SharedLibs\bin\Debug\net6.0\SharedLibs.deps.json
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\SharedLibs\bin\Debug\net6.0\SharedLibs.dll
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\SharedLibs\bin\Debug\net6.0\SharedLibs.pdb
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\SharedLibs\obj\Debug\net6.0\SharedLibs.csproj.AssemblyReference.cache
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\SharedLibs\obj\Debug\net6.0\SharedLibs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\SharedLibs\obj\Debug\net6.0\SharedLibs.AssemblyInfoInputs.cache
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\SharedLibs\obj\Debug\net6.0\SharedLibs.AssemblyInfo.cs
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\SharedLibs\obj\Debug\net6.0\SharedLibs.csproj.CoreCompileInputs.cache
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\SharedLibs\obj\Debug\net6.0\SharedLibs.dll
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\SharedLibs\obj\Debug\net6.0\refint\SharedLibs.dll
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\SharedLibs\obj\Debug\net6.0\SharedLibs.pdb
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\SharedLibs\obj\Debug\net6.0\ref\SharedLibs.dll
