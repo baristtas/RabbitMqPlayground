@@ -28,7 +28,7 @@ namespace CreateExcelFile
                 Uri = new Uri(uri),
                 DispatchConsumersAsync = true
             });
-
+            
             builder.Services.AddSingleton<RabbitMQClientService>();
             builder.Services.AddSingleton<RabbitMQPublisher>();
 
