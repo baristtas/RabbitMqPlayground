@@ -1,6 +1,8 @@
 using CreateExcelFile.Models;
+using ImageWatermarkRabbitMQ.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using RabbitMQ.Client;
 
 namespace CreateExcelFile
 {
@@ -10,6 +12,17 @@ namespace CreateExcelFile
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            string uri = "";
+            try
+            {
+                StreamReader sr = new StreamReader("C:\\Users\\baris.tas\\Desktop\\rbmq\\amqpinstanceuri.txt");
+                uri = sr.ReadToEnd();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+            }
+
             // Add services to the container.
             builder.Services.AddDbContext<AppDbContext>(options =>
             {
@@ -17,6 +30,14 @@ namespace CreateExcelFile
 
             });
             builder.Services.AddControllersWithViews();
+            
+            builder.Services.AddSingleton(sp => new ConnectionFactory()
+            {
+                Uri = new Uri(uri),
+                DispatchConsumersAsync = true
+            });
+
+            builder.Services.AddSingleton<RabbitMQClientService>();
             
             builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
             {
