@@ -3015,6 +3015,8 @@
       "ExcelFileCreateWorkerService/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.7",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.Configuration.Json": "7.0.0",
           "Microsoft.Extensions.Hosting": "7.0.1",
           "RabbitMQ.Client": "6.5.0",
           "SharedLibs": "1.0.0"
