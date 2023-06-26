@@ -44,7 +44,6 @@ namespace CreateExcelFile.Controllers
             _rabbitMQPublisher.Publish(new CreateExcelMessage()
             {
                 FileId = userFile.Id,
-                UserId = user.Id
             });
 
             return RedirectToAction(nameof(Files));

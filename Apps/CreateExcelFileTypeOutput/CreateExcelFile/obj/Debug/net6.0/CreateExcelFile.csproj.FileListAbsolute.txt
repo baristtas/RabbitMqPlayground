@@ -1,3 +1,9 @@
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\obj\Debug\net6.0\CreateExcelFile.AssemblyInfo.cs
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\obj\Debug\net6.0\ref\CreateExcelFile.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\ExcelFileCreateWorkerService.deps.json
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\ExcelFileCreateWorkerService.runtimeconfig.json
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\ExcelFileCreateWorkerService.exe
@@ -11,7 +17,11 @@ C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\b
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\CreateExcelFile.pdb
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\Azure.Core.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\ClosedXML.dll
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\ExcelNumberFormat.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\Humanizer.dll
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\Irony.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\MessagePack.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\MessagePack.Annotations.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
@@ -23,7 +33,6 @@ C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\b
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\Microsoft.Build.Framework.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
-C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Features.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\Microsoft.CodeAnalysis.Features.dll
@@ -99,6 +108,7 @@ C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\b
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\NuGet.Protocol.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\NuGet.Versioning.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\SixLabors.Fonts.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\System.CodeDom.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\System.Composition.AttributedModel.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\System.Composition.Convention.dll
@@ -110,6 +120,7 @@ C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\b
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\System.Diagnostics.EventLog.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\System.Drawing.Common.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\System.IO.Packaging.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\System.Memory.Data.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\System.Runtime.Caching.dll
@@ -119,6 +130,7 @@ C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\b
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\System.Threading.Channels.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\XLParser.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\af\Humanizer.resources.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\ar\Humanizer.resources.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\az\Humanizer.resources.dll
@@ -181,7 +193,6 @@ C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\b
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
@@ -223,7 +234,6 @@ C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\b
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Features.resources.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Features.resources.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
-C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Features.resources.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
@@ -267,7 +277,6 @@ C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\b
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
-C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
@@ -280,7 +289,6 @@ C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\b
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\obj\Debug\net6.0\CreateExcelFile.csproj.AssemblyReference.cache
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\obj\Debug\net6.0\CreateExcelFile.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\obj\Debug\net6.0\CreateExcelFile.AssemblyInfoInputs.cache
-C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\obj\Debug\net6.0\CreateExcelFile.AssemblyInfo.cs
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\obj\Debug\net6.0\CreateExcelFile.csproj.CoreCompileInputs.cache
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\obj\Debug\net6.0\CreateExcelFile.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\obj\Debug\net6.0\CreateExcelFile.RazorAssemblyInfo.cache
@@ -300,4 +308,3 @@ C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\o
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\obj\Debug\net6.0\refint\CreateExcelFile.dll
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\obj\Debug\net6.0\CreateExcelFile.pdb
 C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\obj\Debug\net6.0\CreateExcelFile.genruntimeconfig.cache
-C:\Users\baris.tas\Desktop\rbmq\Apps\CreateExcelFileTypeOutput\CreateExcelFile\obj\Debug\net6.0\ref\CreateExcelFile.dll
