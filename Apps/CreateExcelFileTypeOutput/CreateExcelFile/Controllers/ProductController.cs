@@ -45,6 +45,7 @@ namespace CreateExcelFile.Controllers
             {
                 FileId = userFile.Id,
             });
+            TempData["StartCreatingExcel"] = true;
 
             return RedirectToAction(nameof(Files));
         }
