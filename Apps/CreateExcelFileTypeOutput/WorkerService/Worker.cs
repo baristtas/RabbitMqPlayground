@@ -58,7 +58,7 @@ namespace WorkerService
 
             multipartFormDataContent.Add(new ByteArrayContent(ms.ToArray()),"file",Guid.NewGuid().ToString()+".xlsx");
 
-            var baseUrl = "https://localhost:44372/api/files";
+            var baseUrl = "https://localhost:44372/api/Files";
 
             using(var httpClient = new HttpClient())
             {

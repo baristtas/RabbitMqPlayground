@@ -55,7 +55,7 @@ namespace CreateExcelFile.Controllers
 
 
 
-            return View(await _context.UserFiles.Where(x => x.UserId == user.Id).ToListAsync());
+            return View(await _context.UserFiles.Where(x => x.UserId == user.Id).OrderByDescending(x=> x.Id).ToListAsync());
         }
     }
 }

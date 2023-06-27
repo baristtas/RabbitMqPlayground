@@ -1,7 +1,9 @@
+using CreateExcelFile.Hubs;
 using CreateExcelFile.Models;
 using CreateExcelFile.Services;
 using ImageWatermarkRabbitMQ.Services;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using RabbitMQ.Client;
 
@@ -20,6 +22,7 @@ namespace CreateExcelFile
 
             });
             builder.Services.AddControllersWithViews();
+            builder.Services.AddSignalR();
 
             StreamReader sr = new StreamReader("C:\\Users\\baris.tas\\Desktop\\rbmq\\amqpinstanceuri.txt");
             var uri = sr.ReadToEnd();
@@ -31,7 +34,7 @@ namespace CreateExcelFile
             
             builder.Services.AddSingleton<RabbitMQClientService>();
             builder.Services.AddSingleton<RabbitMQPublisher>();
-
+            builder.Services.AddTransient<MyHub>();
             builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
             {
                 options.User.RequireUniqueEmail = true;
@@ -83,7 +86,11 @@ namespace CreateExcelFile
             app.UseAuthentication();
 
             app.UseAuthorization();
-
+           app.UseEndpoints(endpoints =>
+           {
+               endpoints.MapHub<MyHub>("/MyHub");
+           
+           });
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
