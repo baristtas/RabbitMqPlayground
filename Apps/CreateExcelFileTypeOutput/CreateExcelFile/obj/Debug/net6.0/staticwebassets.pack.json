@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\CreateExcelFileTypeOutput\\CreateExcelFile\\wwwroot\\files\\product-excel-53c6eba-27.xlsx",
+      "PackagePath": "staticwebassets\\files\\product-excel-53c6eba-27.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\CreateExcelFileTypeOutput\\CreateExcelFile\\wwwroot\\files\\product-excel-cd19ad9-4c.xlsx",
+      "PackagePath": "staticwebassets\\files\\product-excel-cd19ad9-4c.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\CreateExcelFileTypeOutput\\CreateExcelFile\\wwwroot\\files\\product-excel-ff4117c-94.xlsx",
+      "PackagePath": "staticwebassets\\files\\product-excel-ff4117c-94.xlsx"
+    },
+    {
       "Id": "C:\\Users\\baris.tas\\Desktop\\rbmq\\Apps\\CreateExcelFileTypeOutput\\CreateExcelFile\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

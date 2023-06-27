@@ -21,10 +21,9 @@
             <td>@item.GetCreatedDate</td>
             <td>@item.FileStatus</td>
             <td>
-                <a href="~/files/@item.FilePath" class="btn btn-primary @(item.FileStatus == FileStatus.Creating ? "disabled" : "")">
-                    Download
-                </a>
+                <a class="btn btn-primary @(item.FileStatus==FileStatus.Creating ? "disabled": "")" href="@Url.Action("Download", "Files", new { fileId = item.Id })">Download</a
             </td>
+            
         </tr>
     }
 </table>
